@@ -1,0 +1,77 @@
+{
+  "name": "bestpracticesnode",
+  "version": "0.0.1",
+  "description": "Best practices example to create an awesome API with Node js  ",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./dist/app.js",
+    "dev": "NODE_ENV=dev ts-node-dev --ignore-watch node_modules --inspect=0.0.0.0:9267 ./src/app.ts",
+    "build": "tsc",
+    "lint": "tslint src/**/*",
+    "watch": "tsc --watch",
+    "serve": "nodemon ./dist/app.js",
+    "test": "echo 'Error, testing not found' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artificial-Human/best-practices-api-rest-node.git"
+  },
+  "keywords": [
+    "best",
+    "practices",
+    "node",
+    "api",
+    "express",
+    "tdd"
+  ],
+  "author": "Leonardo Velarde (@aguacatevelarde)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Artificial-Human/best-practices-api-rest-node/issues"
+  },
+  "homepage": "https://github.com/Artificial-Human/best-practices-api-rest-node#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@status/codes": "^1.6.2",
+    "@typegoose/typegoose": "^8.1.1",
+    "@types/bcrypt": "^5.0.0",
+    "@types/hapi__joi": "^17.1.6",
+    "bcrypt": "^5.0.1",
+    "class-transformer": "^0.3.1",
+    "class-validator": "^0.11.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "inversify": "^5.0.1",
+    "inversify-inject-decorators": "^3.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.13.8",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.24",
+    "@types/chai": "^4.1.7",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.16.0",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/mocha": "^5.2.6",
+    "@types/mongoose": "^5.11.97",
+    "@types/supertest": "^2.0.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "mongodb-memory-server": "^5.1.0",
+    "supertest": "^4.0.2",
+    "ts-node": "^8.1.0",
+    "ts-node-dev": "^1.0.0",
+    "tslint": "^5.16.0"
+  },
+  "_moduleAliases": {
+    "@decorators": "src/decorators",
+    "@services": "src/services",
+    "@api": "src/api",
+    "@shared": "src/shared",
+    "@domain": "src/domain",
+    "@models": "src/models"
+  }
+}
